@@ -1,0 +1,59 @@
+.section {
+    margin: 5rem auto;
+    width: 80%;
+    height: 500px;
+    overflow: hidden;
+    color: black !important;
+}
+.singlehead{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.h1{
+    font-size: 5em;
+    color: rgb(72, 72, 242);
+}
+.xett{
+    width: 20%;
+    height: 16px;
+    background-color: black;
+    transition: 0.4s;
+}
+.section:hover.section .singlehead .xett{
+    width: 70%;
+    transition: 0.4s;
+}
+.section h2{
+    margin: 1em 0;
+    grid-area: a;
+    color: black;
+}
+.sectionimg{
+    width: 40%;
+    float: left;
+    margin-right: 1em;
+    box-shadow: 5px 5px 3px black;
+}
+.section p {
+    color: black;
+}
+@media screen and (max-width: 440px) {
+    .singlehead>a>h1{
+      font-size: 3em;
+    }
+    .sectionimg{
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 600px){
+        .sectionimg{
+            float: none;
+        }
+    }
+  @media screen and (max-width: 960px) {
+    .sectionimg{
+        width: 70%;
+      }
+  }

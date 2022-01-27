@@ -1,0 +1,101 @@
+.myvideos{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+.hiddenvideo{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.videosection{
+    margin: 2em auto;
+    width: 48%;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+
+}
+.videosection h2{
+    padding: 1em;
+    
+}
+.mp4{
+    margin: 0 auto;
+    padding-bottom: 1em;
+    width: 90%;
+    object-fit: cover;
+}
+
+
+#videoimg{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature-img{
+    width: 100%;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.paragraph{
+    margin-top: 1em;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    border: 2px solid black;
+    border-top: none;
+}
+.paragraph p{
+    font-size: 1.2em;
+    margin: 1em auto;
+    width: 60%;
+}
+.fa-play-circle{
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+@media screen and (max-width: 760px) {
+    .videosection{
+        margin: 1em auto;
+        width: 350px
+    }
+    .paragraph>h1{
+        font-size: 15px;
+    }
+    .paragraph p{
+        width: 100% ;
+        font-size: 10px ;
+    }
+}
+@media screen and (max-width: 440px) {
+    .paragraph p{
+        width: 100% ;
+        font-size: 6px ;
+    }
+    .videosection h2{
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,102 @@
+.kateqoriya{
+    margin-top: 1.2em;
+    text-align: center;
+}
+.hoverli{
+    display: flex;
+    flex-direction: column;
+}
+.hoverli>b{
+    margin-top: 0.5em;
+}
+.img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0.5em ;
+    width: 80px;
+    height: 80px;
+}
+#img01{
+    background-image: url("../home/img/all-inclusive.png");
+}
+.hoverli:hover.hoverli>#img01{
+    cursor: pointer;
+    background-image: url("../home/img/all-inclusive1.png");
+}
+#img0{
+    background-image: url("../home/img/tuxedo.png");
+
+}
+.hoverli:hover.hoverli>#img0{
+    cursor: pointer;
+    background-image: url("../home/img/tuxedo1.png");
+}
+#img11{
+    background-image: url("../home/img/motivation.png");
+}
+.hoverli:hover{
+    cursor: pointer;
+}
+.hoverli:hover.hoverli>#img11{
+    background-image: url("../home/img/motivation1.png");
+}
+
+#img22{
+    background-image: url("../home/img/sportman.png");
+}
+.hoverli:hover.hoverli>#img22{
+    cursor: pointer;
+    background-image: url("../home/img/sportman1.png");
+}
+.activ{
+    border-bottom: 2.3px solid black;
+}
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 1em;
+}
+.categories>li{
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    margin: 1.2em;
+}
+@media screen and (max-width: 960px) {
+    .img{
+        width: 50px;
+        height: 50px;
+    }
+    .categories>li{
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        margin: 0.5em;
+    }
+}
+@media screen and (max-width: 440px) {
+    .img{
+        width: 30px;
+        height: 30px;
+    }
+    .categories>li{
+        font-size: 0.6em;
+        display: flex;
+        align-items: center;
+        margin: 0.5em;
+    }
+}
+@media screen and (max-width: 350px) {
+    .img{
+        width: 20px;
+        height: 20px;
+    }
+    .categories>li{
+        font-size: 0.5em;
+        display: flex;
+        align-items: center;
+        margin: 0.5em;
+    }
+}
